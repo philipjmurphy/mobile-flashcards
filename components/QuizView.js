@@ -17,9 +17,9 @@ class QuizView extends Component {
   }
 
   componentDidMount() {
-    this.loadSound('page-flip', 'http://encorebiz.ie/udacity/sounds/page-flip-01a.mp3') // Attrib: // https://www.soundjay.com/misc/page-flip-01a.mp3
-    this.loadSound('sentnc10', 'http://encorebiz.ie/udacity/sounds/sentnc10.wav') // Attrib: http://www.filmsound.org/starwars/sentnc10.wav
-    this.loadSound('wookie1', 'http://encorebiz.ie/udacity/sounds/wookie1.wav') // Attrib: http://www.filmsound.org/starwars/wookie1.wav
+    this.loadSound('page-flip', 'https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/sounds/page-flip-01a.mp3') // Attrib: // https://www.soundjay.com/misc/page-flip-01a.mp3
+    this.loadSound('sentnc10', 'https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/sounds/sentnc10.wav') // Attrib: http://www.filmsound.org/starwars/sentnc10.wav
+    this.loadSound('wookie1', 'https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/sounds/wookie1.wav') // Attrib: http://www.filmsound.org/starwars/wookie1.wav
   }
 
   loadSound = async (name, soundUri) => {

@@ -7,9 +7,9 @@
     "slug": "mobile-flashcards",
     "primaryColor": "#2196F3",
     "version": "1.0",
-    "icon": "http://www.encorebiz.ie/udacity/images/flashcards-1024x1024.jpg",
+    "icon": "https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/images/flashcards-1024x1024.jpg",
     "notification": {
-      "icon": "http://www.encorebiz.ie/udacity/images/flashcards-48x48.png",
+      "icon": "https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/images/flashcards-48x48.png",
     },
     "ios": {
       "bundleIdentifier": "ie.encorebiz.mobile-flashcards"
