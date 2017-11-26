@@ -16,6 +16,9 @@
     },
     "android": {
       "package": "ie.encorebiz"
+    },
+    "splash": {
+      "image": "./assets/images/flashcards-2208x2208.png"
     }
   }
 }
