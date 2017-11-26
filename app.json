@@ -7,15 +7,15 @@
     "slug": "mobile-flashcards",
     "primaryColor": "#2196F3",
     "version": "1.0",
-    "icon": "https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/images/flashcards-1024x1024.jpg",
+    "icon": "https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/images/flashcards-1024x1024.png",
     "notification": {
       "icon": "https://s3-eu-west-1.amazonaws.com/udacity-mobile-flashcards/images/flashcards-48x48.png",
     },
     "ios": {
-      "bundleIdentifier": "ie.encorebiz.mobile-flashcards"
+      "bundleIdentifier": "ie.encorebiz"
     },
     "android": {
-      "package": "ie.encorebiz.mobile-flashcards"
+      "package": "ie.encorebiz"
     }
   }
 }
