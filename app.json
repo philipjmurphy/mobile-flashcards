@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "sdkVersion": "23.0.0",
+    "orientation": "default",
+    "name": "Mobile Flashcards",
+    "description": "Student Flashcard memory app developed as part of Udacity nanodegree program.",
+    "slug": "mobile-flashcards",
+    "primaryColor": "#2196F3",
+    "version": "1.0",
+    "icon": "http://www.encorebiz.ie/udacity/images/flashcards-1024x1024.jpg",
+    "notification": {
+      "icon": "http://www.encorebiz.ie/udacity/images/flashcards-48x48.png",
+    },
+    "ios": {
+      "bundleIdentifier": "ie.encorebiz.mobile-flashcards"
+    },
+    "android": {
+      "package": "ie.encorebiz.mobile-flashcards"
+    }
+  }
+}
