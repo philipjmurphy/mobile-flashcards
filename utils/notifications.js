@@ -18,11 +18,11 @@ export function setLocalNotification () {
           if(status === 'granted') {
             Notifications.cancelAllScheduledNotificationsAsync()
 
+            // Set a reminder for 8:30 in the morning.
             let tomorrow = new Date()
             tomorrow.setDate(tomorrow.getDate() + 1)
-            tomorrow.setHours(20)
-            tomorrow.setMinutes(0)
-            // tomorrow.setSeconds(tomorrow.getSeconds() + 15)
+            tomorrow.setHours(8)
+            tomorrow.setMinutes(30)
 
             Notifications.scheduleLocalNotificationAsync(
               createNotification(), {

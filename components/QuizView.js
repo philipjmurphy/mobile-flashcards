@@ -8,6 +8,8 @@ import { White, Green, Red, Amber, Blue, GREY } from 'react-native-material-colo
 
 import { Ionicons } from '@expo/vector-icons'
 
+import { clearLocalNotification, setLocalNotification } from '../utils/notifications'
+
 class QuizView extends Component {
   state = {
     index: 0,
@@ -55,6 +57,11 @@ class QuizView extends Component {
           Animated.spring(bounceValue, { toValue: 1, friction: 4})
         ]).start()
       })
+
+      // Clear notification reminder as have completed quiz for today.
+      clearLocalNotification()
+      // Set a new reminder notification for tomorrow.
+      setLocalNotification()
 
       return (
         <View style={styles.container}>
