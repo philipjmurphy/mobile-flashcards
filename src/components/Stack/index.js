@@ -7,11 +7,11 @@ import { Ionicons } from '@expo/vector-icons'
 
 import { Blue, White } from 'react-native-material-color'
 
-import DeckListView from './components/DeckListView'
-import DeckView from './components/DeckView'
-import QuizView from './components/QuizView'
-import NewDeckView from './components/NewDeckView'
-import NewCardView from './components/NewCardView'
+import DeckListView from '../DeckListView'
+import DeckView from '../DeckView'
+import QuizView from '../QuizView'
+import NewDeckView from '../NewDeckView'
+import NewCardView from '../NewCardView'
 
 export default Stack = StackNavigator({
   Home: {

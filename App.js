@@ -9,9 +9,9 @@ import { setLocalNotification } from './src/utils/notifications'
 
 import { Blue } from 'react-native-material-color'
 
-import Loader from './src/Loader'
-import AppStatusBar from './src/AppStatusBar'
-import Stack from './src/Stack'
+import Loader from './src/components/Loader'
+import AppStatusBar from './src/components/AppStatusBar'
+import Stack from './src/components/Stack'
 
 const { persistor, store } = configureStore()
 
