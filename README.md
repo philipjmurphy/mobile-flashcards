@@ -1,4 +1,4 @@
-This project is my sumbission for the Udacity React NanoDegree program.
+This project is my sumbission for the Udacity React Developer NanoDegree program.
 
 It is a mobile application (Android and iOS) that allows users to study collections of flashcards. The app allows users to create different categories of flashcards called "decks", add flashcards to those decks, then take quizzes on those decks.
 
