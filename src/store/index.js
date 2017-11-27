@@ -4,7 +4,7 @@ import { persistStore, persistCombineReducers } from 'redux-persist'
 import { AsyncStorage } from 'react-native'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-import decks from '../reducers'
+import reducers from '../reducers'
 
 export default configureStore = () => {
   const store = createStore(
@@ -12,10 +12,7 @@ export default configureStore = () => {
         key: 'decks',
         storage: AsyncStorage
         // debug: true
-      }, {
-        decks,
-        form: reduxReducer
-    }),
+      }, reducers),
     undefined,
     compose(composeWithDevTools())
   )
