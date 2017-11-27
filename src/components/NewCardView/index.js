@@ -5,7 +5,7 @@ import { View, StyleSheet, Text, Button, TextInput, TouchableOpacity } from 'rea
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 
-import { addNewCard } from '../actions/decks'
+import { addNewCard } from '../../actions/decks'
 
 import { Blue, White, GREY } from 'react-native-material-color'
 

@@ -8,7 +8,7 @@ import { White, Green, Red, Amber, Blue, GREY } from 'react-native-material-colo
 
 import { Ionicons } from '@expo/vector-icons'
 
-import { clearLocalNotification, setLocalNotification } from '../utils/notifications'
+import { clearLocalNotification, setLocalNotification } from '../../utils/notifications'
 
 class QuizView extends Component {
   state = {

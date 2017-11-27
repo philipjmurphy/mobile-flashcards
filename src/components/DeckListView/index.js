@@ -8,7 +8,7 @@ import _ from 'lodash'
 
 import { GREY } from 'react-native-material-color'
 
-import DeckItemView from './DeckItemView'
+import DeckItemView from '../DeckItemView'
 
 const propTypes = {
   decks: PropTypes.array.isRequired,

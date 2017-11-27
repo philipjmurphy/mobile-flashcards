@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
 
-import DeckItemView from './DeckItemView'
+import DeckItemView from '../DeckItemView'
 
 import { Blue, White, GREY } from 'react-native-material-color'
 
