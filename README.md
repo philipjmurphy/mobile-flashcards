@@ -26,9 +26,9 @@ Images
 
 Audio Files
 -----------
-https://www.soundjay.com/misc/page-flip-01a.mp3
-http://www.filmsound.org/starwars/sentnc10.wav
-http://www.filmsound.org/starwars/wookie1.wav
+https://www.soundjay.com/misc/page-flip-01a.mp3  
+http://www.filmsound.org/starwars/sentnc10.wav  
+http://www.filmsound.org/starwars/wookie1.wav  
 
 MIT License
 Copyright (c) 2017 Philip Murphy
