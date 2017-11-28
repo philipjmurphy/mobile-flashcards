@@ -7,8 +7,6 @@ import configureStore from './src/store'
 
 import { setLocalNotification } from './src/utils/notifications'
 
-import { Blue } from 'react-native-material-color'
-
 import Loader from './src/components/Loader'
 import AppStatusBar from './src/components/AppStatusBar'
 import Stack from './src/components/Stack'
@@ -24,7 +22,7 @@ export default class App extends Component {
     <Provider store={store}>
       <PersistGate persistor={persistor} loading={<Loader />}>
         <View style={{flex: 1}}>
-          <AppStatusBar backgroundColor={Blue} barStyle="light-content" />
+          <AppStatusBar />
           <Stack />
         </View>
       </PersistGate>
