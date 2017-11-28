@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 import { NavigationActions } from 'react-navigation'
 
-import { addNewDeck } from '../../actions/decks'
+import { addNewDeck } from '../../actions'
 
 import styles from './styles'
 

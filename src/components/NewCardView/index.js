@@ -5,7 +5,7 @@ import { View, Text, TextInput, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 
-import { addNewCard } from '../../actions/decks'
+import { addNewCard } from '../../actions'
 
 import styles from './styles'
 

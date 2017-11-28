@@ -1,4 +1,4 @@
-import * as DeckActionTypes from '../actions/deckActionTypes'
+import * as ActionTypes from '../actions/types'
 
 const INITIAL_STATE = {
   byId: {
@@ -24,7 +24,7 @@ const INITIAL_STATE = {
 
 export default function decks(state=INITIAL_STATE, action) {
   switch (action.type) {
-    case DeckActionTypes.ADD_NEW_DECK: {
+    case ActionTypes.ADD_NEW_DECK: {
       return {
         ...state,
         byId: {
@@ -36,7 +36,7 @@ export default function decks(state=INITIAL_STATE, action) {
         }
       }
     }
-    case DeckActionTypes.ADD_NEW_CARD: {
+    case ActionTypes.ADD_NEW_CARD: {
       return {
         ...state,
         byId: {

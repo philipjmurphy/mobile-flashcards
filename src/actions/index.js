@@ -1,10 +1,10 @@
-import * as DeckActionTypes from './deckActionTypes'
+import * as ActionTypes from '../actions/types'
 
 // NEW DECK
 ///////////
 export const addNewDeck = (title) => {
   return {
-    type: DeckActionTypes.ADD_NEW_DECK,
+    type: ActionTypes.ADD_NEW_DECK,
     title
   }
 }
@@ -13,7 +13,7 @@ export const addNewDeck = (title) => {
 ///////////
 export const addNewCard = (title, question, answer) => {
   return {
-    type: DeckActionTypes.ADD_NEW_CARD,
+    type: ActionTypes.ADD_NEW_CARD,
     title,
     question,
     answer
