@@ -1,9 +1,10 @@
 import React from 'react'
 import { View, StatusBar } from 'react-native'
-import { Constants } from 'expo'
 
-export default AppStatusBar = ({backgroundColor, ...props}) => (
-  <View style={{ backgroundColor, height: Constants.statusBarHeight }}>
-    <StatusBar translucent backgroundColor={backgroundColor} {...props} />
+import styles from './styles'
+
+export default AppStatusBar = () => (
+  <View style={styles.statusbar}>
+    <StatusBar translucent barStyle="light-content" />
   </View>
 )

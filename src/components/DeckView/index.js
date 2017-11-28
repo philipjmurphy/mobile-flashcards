@@ -1,17 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 
-import DeckItemView from '../DeckItemView'
-
-import { Blue, White, GREY } from 'react-native-material-color'
-
-const propTypes = {
-  deck: PropTypes.object.isRequired,
-  navigation: PropTypes.object.isRequired
-}
+import styles from './styles'
 
 const DeckView = ({ deck, navigation }) => (
   <View style={styles.container}>
@@ -34,42 +27,10 @@ const DeckView = ({ deck, navigation }) => (
   </View>
 )
 
-DeckView.propTypes = propTypes
-
-const styles = StyleSheet.create({
-  container: {
-    margin: 8,
-    padding: 16,
-    backgroundColor: White
-  },
-  detail: {
-    padding: 16
-  },
-  title: {
-    color: GREY[900],
-    fontSize: 32
-  },
-  cards: {
-    color: GREY[600],
-    fontSize: 20
-  },
-  buttons: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end'
-  },
-  addCard: {
-    padding: 16,
-    color: Blue,
-    fontSize: 20
-  },
-  startQuiz: {
-    padding: 16,
-    borderRadius: 4,
-    backgroundColor: Blue,
-    color: White,
-    fontSize: 20
-  }
-})
+DeckView.propTypes = {
+  deck: PropTypes.object.isRequired,
+  navigation: PropTypes.object.isRequired
+}
 
 const mapStateToProps = ({decks}, { navigation }) => ({
   deck: decks.byId[navigation.state.params.title]

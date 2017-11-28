@@ -13,6 +13,8 @@ import QuizView from '../QuizView'
 import NewDeckView from '../NewDeckView'
 import NewCardView from '../NewCardView'
 
+import styles from './styles'
+
 export default Stack = StackNavigator({
   Home: {
     screen: DeckListView,
@@ -31,7 +33,7 @@ export default Stack = StackNavigator({
         height: 60 + Constants.statusBarHeight,
         backgroundColor: Blue
       }
-    }),
+    })
   },
   DeckView: {
     screen: DeckView,
@@ -68,13 +70,6 @@ export default Stack = StackNavigator({
     },
     headerTintColor: White
   })
-})
-
-const styles = StyleSheet.create({
-  addButton: {
-    backgroundColor: Blue,
-    color: White
-  }
 })
 
 // Prevent duplicate navigation events.
