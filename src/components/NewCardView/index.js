@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native'
 
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
@@ -12,14 +12,14 @@ import styles from './styles'
 const required = value => !value
 
 const NewCardView = ({handleSubmit, invalid}) => (
-  <View style={styles.card}>
+  <KeyboardAvoidingView style={styles.card} behavior="padding">
     <Field name="question" component={renderQuestionInput} validate={required} />
     <Field name="answer" component={renderAnswerInput} validate={required} />
 
     <TouchableOpacity disabled={invalid} onPress={handleSubmit(onSubmit)}>
       <Text style={[styles.submitButton, {opacity: (invalid ? 0.5 : 1)}]}>Create New Question</Text>
     </TouchableOpacity>
-  </View>
+  </KeyboardAvoidingView>
 )
 
 const onSubmit = (values, dispatch, props) => {

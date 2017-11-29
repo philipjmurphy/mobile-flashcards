@@ -20,6 +20,7 @@ export default StyleSheet.create({
   submitButton: {
     alignSelf: 'flex-end',
     color: Blue,
-    fontSize: 20
+    fontSize: 20,
+    marginBottom: 16
   }
 })
