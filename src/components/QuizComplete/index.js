@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import { Platform, View, Text, TouchableOpacity, Animated } from 'react-native'
 
@@ -51,6 +52,13 @@ class QuizComplete extends Component {
       </View>
     )
   }
+}
+
+QuizComplete.propTypes = {
+  score: PropTypes.number.isRequired,
+  deck: PropTypes.object.isRequired,
+  resetQuiz: PropTypes.func.isRequired,
+  navigation: PropTypes.object.isRequired
 }
 
 export default QuizComplete
