@@ -2,7 +2,9 @@ import React from 'react'
 
 import { StyleSheet } from 'react-native'
 
-import { Blue, White, GREY } from 'react-native-material-color'
+import { PrimaryColor } from '../../styles'
+
+import { White, Text1, Text2, Display1, Title } from '../../styles'
 
 export default StyleSheet.create({
   container: {
@@ -14,12 +16,12 @@ export default StyleSheet.create({
     padding: 16
   },
   title: {
-    color: GREY[900],
-    fontSize: 32
+    color: Text1,
+    ...Display1
   },
   cards: {
-    color: GREY[600],
-    fontSize: 20
+    color: Text2,
+    ...Title
   },
   buttons: {
     flexDirection: 'row',
@@ -27,14 +29,14 @@ export default StyleSheet.create({
   },
   addCard: {
     padding: 16,
-    color: Blue,
-    fontSize: 20
+    color: PrimaryColor,
+    ...Title
   },
   startQuiz: {
     padding: 16,
     borderRadius: 4,
-    backgroundColor: Blue,
+    backgroundColor: PrimaryColor,
     color: White,
-    fontSize: 20
+    ...Title
   }
 })

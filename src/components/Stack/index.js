@@ -1,11 +1,8 @@
 import React from 'react'
-import { Platform, StyleSheet, View } from 'react-native'
+import { Platform } from 'react-native'
 import { StackNavigator, NavigationActions } from 'react-navigation'
-import { Constants } from 'expo'
 
 import { Ionicons } from '@expo/vector-icons'
-
-import { Blue, White } from 'react-native-material-color'
 
 import DeckListView from '../DeckListView'
 import DeckView from '../DeckView'
@@ -13,7 +10,7 @@ import QuizView from '../QuizView'
 import NewDeckView from '../NewDeckView'
 import NewCardView from '../NewCardView'
 
-import styles from './styles'
+import styles, { defaultHeaderStyles } from './styles'
 
 export default Stack = StackNavigator({
   Home: {
@@ -21,18 +18,10 @@ export default Stack = StackNavigator({
     navigationOptions: ({navigation}) => ({
       title: 'Decks',
       headerRight: (
-        <View style={{marginRight: 16}}>
-          <Ionicons name={Platform.OS === 'ios' ? 'ios-add' : 'md-add'}
-                    size={36}
-                    color={White}
-                    onPress={() => navigation.navigate('NewDeckView')} />
-        </View>
+        <Ionicons style={styles.addButton} name={Platform.OS === 'ios' ? 'ios-add' : 'md-add'}
+                  onPress={() => navigation.navigate('NewDeckView')} />
       ),
-      headerStyle: {
-        paddingTop: Constants.statusBarHeight,
-        height: 60 + Constants.statusBarHeight,
-        backgroundColor: Blue
-      }
+      headerStyle: styles.header
     })
   },
   DeckView: {
@@ -60,16 +49,7 @@ export default Stack = StackNavigator({
     })
   }
 }, {
-  navigationOptions: ({navigation}) => ({
-    headerStyle: {
-      backgroundColor: Blue
-    },
-    headerTitleStyle: {
-      color: White,
-      fontSize: 24
-    },
-    headerTintColor: White
-  })
+  navigationOptions: ({navigation}) => (defaultHeaderStyles)
 })
 
 // Prevent duplicate navigation events.

@@ -10,7 +10,7 @@ import styles from './styles'
 export default DeckItemView = ({deck, navigation}) => (
   <TouchableOpacity key={deck.title} onPress={() => navigation.navigate('DeckView',  { title: deck.title })}>
     <View style={styles.container}>
-      <MaterialCommunityIcons style={styles.icon} name="cards-outline" size={36} />
+      <MaterialCommunityIcons style={styles.icon} name="cards-outline" />
       <View style={styles.titleCards}>
         <Text style={styles.title}>
           {deck.title}

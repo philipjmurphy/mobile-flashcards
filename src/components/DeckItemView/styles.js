@@ -2,7 +2,7 @@ import React from 'react'
 
 import { StyleSheet } from 'react-native'
 
-import { Blue, White, GREY } from 'react-native-material-color'
+import { PrimaryColor, White, Display2, Headline, Subheading, Text1, Text2 } from '../../styles'
 
 export default StyleSheet.create({
   container: {
@@ -21,14 +21,15 @@ export default StyleSheet.create({
     alignContent: 'center'
   },
   title: {
-    color: GREY[900],
-    fontSize: 24
+    color: Text1,
+    ...Headline
   },
   cards: {
-    color: GREY[600],
-    fontSize: 18
+    color: Text2,
+    ...Subheading
   },
   icon: {
-    color: Blue
+    color: PrimaryColor,
+    ...Display2
   }
 })

@@ -4,11 +4,11 @@ import { StyleSheet } from 'react-native'
 
 import { Constants } from 'expo'
 
-import { Blue } from 'react-native-material-color'
+import { PrimaryColor } from '../../styles'
 
 export default StyleSheet.create({
   statusbar: {
-    backgroundColor: Blue,
+    backgroundColor: PrimaryColor,
     height: Constants.statusBarHeight
   }
 })

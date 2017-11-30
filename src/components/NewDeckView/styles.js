@@ -2,7 +2,7 @@ import React from 'react'
 
 import { StyleSheet } from 'react-native'
 
-import { Blue, White, GREY } from 'react-native-material-color'
+import { PrimaryColor, White, Text2, Title } from '../../styles'
 
 export default StyleSheet.create({
   card: {
@@ -11,18 +11,18 @@ export default StyleSheet.create({
     backgroundColor: White
   },
   title: {
-    fontSize: 20,
-    color: GREY[900]
+    color: Text2,
+    ...Title
   },
   field: {
     height: 60,
     marginBottom: 16,
     paddingBottom: 8,
-    fontSize: 20
+    ...Title
   },
   submitButton: {
     alignSelf: 'flex-end',
-    color: Blue,
-    fontSize: 20
+    color: PrimaryColor,
+    ...Title
   }
 })

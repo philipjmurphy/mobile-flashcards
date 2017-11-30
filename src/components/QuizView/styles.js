@@ -2,7 +2,7 @@ import React from 'react'
 
 import { StyleSheet } from 'react-native'
 
-import { White, Green, Red, Blue, GREY } from 'react-native-material-color'
+import { PrimaryColor, White, Green, Red, Text1, Text2, Headline, Subheading, Title } from '../../styles'
 
 export default StyleSheet.create({
   container: {
@@ -15,24 +15,24 @@ export default StyleSheet.create({
     justifyContent: 'space-between'
   },
   score: {
-    color: GREY[900],
-    fontSize: 16
+    color: Text1,
+    ...Subheading
   },
   count: {
-    color: GREY[900],
-    fontSize: 16
+    color: Text1,
+    ...Subheading
   },
   card: {
     paddingTop: 32,
     paddingBottom: 32,
-    color: GREY[900],
-    fontSize: 24
+    color: Text1,
+    ...Headline
   },
   show: {
     paddingBottom: 48,
     textAlign: 'center',
-    color: GREY[600],
-    fontSize: 26
+    color: Text2,
+    ...Headline
   },
   buttons: {
     flexDirection: 'row',
@@ -45,17 +45,17 @@ export default StyleSheet.create({
     paddingBottom: 8,
     paddingLeft: 16,
     borderRadius: 4,
-    color: Blue,
-    fontSize: 22
+    color: PrimaryColor,
+    ...Title
   },
   correct: {
     backgroundColor: Green,
     color: White,
-    fontSize: 28
+    ...Headline
   },
   incorrect: {
     backgroundColor: Red,
     color: White,
-    fontSize: 28
+    ...Headline
   }
 })

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { StyleSheet } from 'react-native'
 
-import { Blue, White, Amber, GREY } from 'react-native-material-color'
+import { PrimaryColor, White, Amber, Text1, Display1, Display3, Title } from '../../styles'
 
 export default StyleSheet.create({
   container: {
@@ -13,14 +13,14 @@ export default StyleSheet.create({
   scored: {
     padding: 16,
     textAlign: 'center',
-    color: GREY[900],
-    fontSize: 32
+    color: Text1,
+    ...Display1
   },
   trophy: {
     padding: 16,
     textAlign: 'center',
-    fontSize: 64,
-    color: Amber
+    color: Amber,
+    ...Display3
   },
   buttons: {
     flexDirection: 'row',
@@ -33,7 +33,7 @@ export default StyleSheet.create({
     paddingBottom: 8,
     paddingLeft: 16,
     borderRadius: 4,
-    color: Blue,
-    fontSize: 22
+    color: PrimaryColor,
+    ...Title
   }
 })

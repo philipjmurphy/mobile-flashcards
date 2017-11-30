@@ -2,11 +2,11 @@ import React from 'react'
 
 import { StyleSheet } from 'react-native'
 
-import { GREY } from 'react-native-material-color'
+import { Grey, Text2, Title } from '../../styles'
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: GREY[100]
+    backgroundColor: Grey[100]
   },
   emptyState: {
     flex: 1,
@@ -14,12 +14,12 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   emptyStateText: {
-    color: GREY[600],
-    fontSize: 20
+    color: Text2,
+    ...Title
   },
   separator: {
     height: 1,
-    backgroundColor: GREY[100],
+    backgroundColor: Grey[100],
     marginLeft: 16,
     marginRight: 16
   }
